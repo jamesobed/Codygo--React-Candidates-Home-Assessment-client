@@ -50,15 +50,6 @@ const GetStarted = () => {
       <Section>
         <RightArticle>
           <img
-            src={Motherdughter}
-            alt="photoImg"
-            className="photoImgi"
-            style={{
-              width: "658px",
-              height: "590px",
-            }}
-          />
-          <img
             src={Motherdaughter}
             alt="photoImg"
             className="photoImgi"

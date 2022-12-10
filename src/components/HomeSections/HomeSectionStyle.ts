@@ -27,7 +27,6 @@ export const Section = styled.section`
 
 export const RightArticle = styled.article`
   align-self: flex-end;
-  width: 100%;
   @media (max-width: 1068px) {
     position: absolute;
     z-index: 30;
