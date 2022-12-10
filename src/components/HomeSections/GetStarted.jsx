@@ -15,7 +15,6 @@ import {
 import RoundLogo from "../../assets/round.svg";
 import DudePhone from "../../assets/dude_phone.png";
 import Motherdaughter from "../../assets/imgg.jpg";
-import Motherdughter from "../../assets/htl.jpeg";
 import PurpleBackground from "../../assets/banner.png";
 import LeftArrow from "../../assets/left-arrow.svg";
 import WomenPointing from "../../assets/women_pointing.png";
