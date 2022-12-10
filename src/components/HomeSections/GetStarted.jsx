@@ -35,7 +35,7 @@ const GetStarted = () => {
   const [hotels, setHotels] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/hotels")
+      .get("http://localhost:5000/hotels/all")
       .then((res) => {
         setHotels(res.data.records);
       })
@@ -77,6 +77,7 @@ const GetStarted = () => {
             city={item.city}
             country={item.country}
             address={item.address}
+            brands={item.Brands}
           />
         ))}
       </Steps>

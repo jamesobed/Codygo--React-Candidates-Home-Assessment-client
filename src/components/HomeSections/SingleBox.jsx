@@ -10,7 +10,7 @@ import RoundLogo from "../../assets/round.svg";
 
 import axios from "axios";
 
-const SingleBox = ({ id, name, city, country, address }) => {
+const SingleBox = ({ id, name, city, country, address, brands }) => {
   const navigate = useNavigate();
   const btnClick = () => {
     // save item details in localstorage
@@ -45,15 +45,32 @@ const SingleBox = ({ id, name, city, country, address }) => {
     <Each>
       <h4 className="instruction">Name: {name}</h4>
       <br />
-      <p className="context">
-        City: <b>{city}</b>
-      </p>
-      <br />
-      <p className="context">
-        Country: <b>{country}</b>
-      </p>
+      <div className="Ctry">
+        <p className="context">
+          City: <b>{city}</b>
+        </p>
+        <br />
+        <p className="context">
+          Country: <b>{country}</b>
+        </p>
+      </div>
       <br />
       <p className="context">Address: {address}</p>
+      <br />
+      {/* only show ul if brands array is not empty */}
+      {brands.length > 0 && (
+        <ul>
+          {" "}
+          Brand:
+          {brands.map(({ name, id }) => {
+            return (
+              <li key={id}>
+                <p className="context">{name}</p>
+              </li>
+            );
+          })}
+        </ul>
+      )}
       <br />
       <div className="iconBtn">
         <img

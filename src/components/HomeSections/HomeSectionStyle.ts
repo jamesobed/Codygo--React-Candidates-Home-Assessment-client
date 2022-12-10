@@ -68,12 +68,12 @@ export const Steps = styled.div`
   }
 `;
 export const Each = styled.div`
-  width: 90%;
+  width: 98%;
   height: 240px;
   background: #ffffff;
   border-radius: 16px;
   padding: 24px;
-  margin: 5%;
+  margin: 5% 1%;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
   .iconBtn {
@@ -82,6 +82,23 @@ export const Each = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+  }
+  ul {
+    margin-left: -1%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  ul li {
+    list-style: none;
+  }
+  .Ctry {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; */
   }
   @media (max-width: 800px) {
     height: max-content;
@@ -184,8 +201,8 @@ export const HowItWorks = styled.div`
     width: 229px;
     font-family: "Inter";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 28px;
     text-align: center;
     color: #012a4a;
     flex: none;
