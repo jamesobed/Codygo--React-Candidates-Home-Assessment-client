@@ -57,7 +57,6 @@ const SingleBox = ({ id, name, city, country, address, brands }) => {
       <br />
       <p className="context">Address: {address}</p>
       <br />
-      {/* only show ul if brands array is not empty */}
       {brands.length > 0 && (
         <ul>
           {" "}

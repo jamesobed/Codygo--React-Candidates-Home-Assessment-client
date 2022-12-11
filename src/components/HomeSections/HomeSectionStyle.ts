@@ -68,12 +68,12 @@ export const Steps = styled.div`
   }
 `;
 export const Each = styled.div`
-  width: 98%;
+  width: 90%;
   height: 240px;
   background: #ffffff;
   border-radius: 16px;
   padding: 24px;
-  margin: 5% 1%;
+  margin: 5%;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
   .iconBtn {
@@ -557,17 +557,20 @@ export const Footer = styled.footer`
   .footer_nav {
     display: flex;
     justify-content: space-between;
-    width: 25rem;
+    width: 50%;
     list-style-type: none;
-    margin: 3rem 0;
+    margin: 10% 0;
     box-sizing: border-box;
+    @media (max-width: 300px) {
+      display: block;
+    }
     & li > .link {
       text-transform: capitalize;
       font-family: "Inter";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      line-height: 26px;
+      /* line-height: 26px; */
       font-feature-settings: "liga" off;
       color: #f2f2f2;
       flex: none;
